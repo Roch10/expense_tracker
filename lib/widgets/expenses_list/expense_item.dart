@@ -27,9 +27,9 @@ class ExpenseItem extends StatelessWidget {
                 const Spacer(), // take all empty space between top and bottom widget
                 Row(
                   children: [
-                    Icon(Icons.ac_unit_rounded),
+                    Icon(categoryIcons[expense.category]),
                     const SizedBox(width: 8),
-                    Text(expense.date.toString()),
+                    Text(expense.fomattedDate),
                   ],
                 ),
               ],
